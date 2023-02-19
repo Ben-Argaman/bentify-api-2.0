@@ -1,0 +1,30 @@
+{
+  "name": "bentify",
+  "version": "1.0.0",
+  "description": "music app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server",
+    "client": "npm start --prefix frontend",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "ben argaman",
+  "license": "MIT",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.2",
+    "ffmpeg": "^0.0.4",
+    "ffmpeg-static": "^5.1.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "fs": "^0.0.1-security",
+    "hls-server": "^1.5.0",
+    "memoizee": "^0.4.15",
+    "node-hls-server": "^1.2.1",
+    "youtube-audio-stream": "^0.3.61",
+    "youtube-search-without-api-key": "^1.1.0",
+    "yt-search": "^2.10.4",
+    "ytdl-core": "^4.11.2"
+  }
+}
